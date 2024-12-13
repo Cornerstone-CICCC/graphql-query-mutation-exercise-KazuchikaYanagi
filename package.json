@@ -5,7 +5,7 @@
   },
   "name": "exercise",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "dependencies": {
     "@apollo/server": "^4.11.2",
     "concurrently": "^9.1.0",
@@ -14,6 +14,7 @@
     "uuid": "^11.0.3"
   },
   "scripts": {
+    "dev": "npx tsc --watch & nodemon dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
